@@ -1,68 +1,150 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+@theme {
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Be Vietnam Pro", sans-serif;
+  --color-raw-surface: #f7f5f1;
+  --color-raw-ink: #121212;
+  --color-raw-muted: #5f5958;
+  --color-raw-panel: #ece7df;
+  --color-raw-panel-strong: #ddd5cc;
+  --color-raw-warning: #fedf00;
+  --color-raw-warning-deep: #6c5e00;
+  --color-raw-border: #000000;
+  --color-raw-night: #090909;
+  --color-raw-night-soft: #191919;
+  --color-raw-night-copy: #cfc8bf;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@layer base {
+  * {
+    box-sizing: border-box;
   }
-  a:hover {
-    color: #747bff;
+
+  html {
+    scroll-behavior: smooth;
   }
-  button {
-    background-color: #f9f9f9;
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background: var(--color-raw-surface);
+    color: var(--color-raw-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  ::selection {
+    background: var(--color-raw-warning);
+    color: var(--color-raw-ink);
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #e7e1d7;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-raw-ink);
+    border: 2px solid #e7e1d7;
+  }
+}
+
+@layer components {
+  .layout-shell {
+    @apply mx-auto w-full max-w-[1400px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .frame-panel {
+    @apply border-4 border-raw-border bg-white;
+  }
+
+  .eyebrow {
+    @apply font-headline text-[0.68rem] font-black uppercase tracking-[0.35em] text-raw-warning-deep;
+  }
+
+  .title-block {
+    @apply font-headline font-black uppercase leading-none tracking-[-0.05em];
+  }
+
+  .industrial-grid {
+    background-image: radial-gradient(circle, rgba(18, 18, 18, 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .film-overlay {
+    background-image:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(0, 0, 0, 0.2) 100%),
+      radial-gradient(circle at top right, rgba(254, 223, 0, 0.16), transparent 30%);
+  }
+}
+
+@layer utilities {
+  .shadow-frame {
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+  }
+
+  .shadow-hard {
+    box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .transition-snappy {
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .marquee-track {
+    animation: marquee 24s linear infinite;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
