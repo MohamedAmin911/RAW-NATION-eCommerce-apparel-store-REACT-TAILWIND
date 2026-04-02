@@ -11,18 +11,6 @@ Vercel URL placeholder:
 Replace the placeholder above with your real deployed Vercel link.
 
 ## Screenshots
-
-Add your screenshots to a `screenshots/` folder in the project root, then replace the placeholders below.
-
-- Homepage: `./screenshots/homepage.png`
-- Shop Page: `./screenshots/shop.png`
-- Product Page: `./screenshots/product-details.png`
-- Cart Page: `./screenshots/cart.png`
-- About Page: `./screenshots/about.png`
-
-Suggested markdown format:
-
-```md
 ![Homepage](./screenshots/homepage.png)
 ![Shop](./screenshots/shop.png)
 ![Product Details](./screenshots/product-details.png)
