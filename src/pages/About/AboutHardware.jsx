@@ -13,7 +13,7 @@ export default function AboutHardware() {
           <img
             alt="Heavy machinery"
             className="h-full w-full object-cover"
-            src="/media/raw-nation/about-hardware.jpg"
+            src="/media/raw-nation/about.jpg"
           />
         </div>
         <div>
