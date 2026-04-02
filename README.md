@@ -15,6 +15,9 @@ URL:
 ![Product Details](public/screenshots/product-details.png)
 ![Cart](public/screenshots/cart.png)
 ![About](public/screenshots/about.png)
+<img width="1920" height="1410" alt="signup" src="https://github.com/user-attachments/assets/acbff1e8-517d-41b0-8bf4-54841ce32187" />
+<img width="1920" height="1133" alt="login" src="https://github.com/user-attachments/assets/b2526284-ae3c-4773-9c02-a9b8c48d9186" />
+
 
 
 ## Overview
