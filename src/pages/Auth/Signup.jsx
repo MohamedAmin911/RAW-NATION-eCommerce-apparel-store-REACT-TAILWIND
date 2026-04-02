@@ -54,26 +54,23 @@ export default function Signup() {
     <div className="bg-raw-surface">
       <Navbar backLabel="Back to shop" backTo="/shop" minimal />
       <main className="grid min-h-[calc(100svh-5rem)] lg:grid-cols-2">
-        <section className="relative hidden overflow-hidden bg-black lg:flex lg:items-center lg:justify-center">
+        <section className="relative hidden overflow-hidden bg-black lg:flex lg:items-end lg:p-14">
           <img
-            alt="Industrial texture"
-            className="absolute inset-0 h-full w-full object-cover opacity-65"
-            src="/media/raw-nation/signup-texture.jpg"
+            alt="signup"
+            className="absolute inset-0 h-full w-full object-cover opacity-70"
+            src="/media/raw-nation/signup.jpg"
           />
-          <div className="absolute inset-0 bg-linear-to-b from-black/10 to-black" />
-          <div className="relative z-10 max-w-md text-center text-white">
-            <p className="inline-block bg-raw-warning px-4 py-2 font-headline text-sm font-black uppercase tracking-[0.24em] text-raw-ink">
-              Create identity
-            </p>
-            <p className="mt-8 text-sm font-medium uppercase tracking-[0.16em] text-white/70">
-              Register to track orders, save carts, and receive the first signal whenever a new
-              RAW NATION capsule drops.
+          <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-black/10" />
+          <div className="relative z-10 max-w-lg text-white">
+            <h2 className="title-block text-6xl">Sign Up</h2>
+            <p className="mt-4 text-sm font-medium uppercase tracking-[0.16em] text-white/70">
+              JOIN THE GANG.
             </p>
           </div>
         </section>
         <section className="industrial-grid flex items-center justify-center px-6 py-16">
           <AuthForm
-            eyebrow="Register"
+            eyebrow="Sign Up"
             fields={signupFields}
             footer={
               <div className="text-center text-sm font-bold uppercase tracking-[0.16em] text-raw-muted">
@@ -85,7 +82,7 @@ export default function Signup() {
             }
             onSubmit={handleSubmit}
             submitLabel="Create account"
-            subtitle="Section: onboarding / protocol 01"
+            subtitle=""
             title="Register"
             validate={validateSignup}
           />

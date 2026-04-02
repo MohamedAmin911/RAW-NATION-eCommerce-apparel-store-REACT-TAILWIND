@@ -44,14 +44,12 @@ export default function Login() {
           <img
             alt="Industrial machine"
             className="absolute inset-0 h-full w-full object-cover opacity-70"
-            src="/media/raw-nation/login-machine.jpg"
+            src="/media/raw-nation/login.jpg"
           />
           <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-black/10" />
           <div className="relative z-10 max-w-lg text-white">
-            <h2 className="title-block text-6xl">Join The Resistance</h2>
-            <p className="mt-4 text-sm font-medium uppercase tracking-[0.16em] text-white/70">
-              Established in chaos. Operating in the void.
-            </p>
+            <h2 className="title-block text-6xl">welcome back</h2>
+            
           </div>
         </section>
         <section className="industrial-grid flex items-center justify-center px-6 py-16">
@@ -67,7 +65,7 @@ export default function Login() {
             }
             onSubmit={handleSubmit}
             submitLabel="Login"
-            subtitle="Section: onboarding / protocol 01"
+            subtitle=""
             title="Login"
             validate={validateLogin}
           />
