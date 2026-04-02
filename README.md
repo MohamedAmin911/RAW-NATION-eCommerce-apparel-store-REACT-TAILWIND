@@ -6,7 +6,7 @@ Premium fashion e-commerce storefront built with React, Vite, Tailwind CSS, and 
 
 URL:
 
-`[https://your-vercel-project.vercel.app](https://raw-nation.vercel.app/)`
+[https://your-vercel-project.vercel.app](https://raw-nation.vercel.app/)
 
 
 ## Screenshots
