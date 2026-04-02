@@ -11,11 +11,11 @@ Vercel URL placeholder:
 Replace the placeholder above with your real deployed Vercel link.
 
 ## Screenshots
-![Homepage](./screenshots/homepage.png)
-![Shop](./screenshots/shop.png)
-![Product Details](./screenshots/product-details.png)
-![Cart](./screenshots/cart.png)
-![About](./screenshots/about.png)
+![Homepage](public/screenshots/homepage.png)
+![Shop](public/screenshots/shop.png)
+![Product Details](public/screenshots/product-details.png)
+![Cart](public/screenshots/cart.png)
+![About](public/screenshots/about.png)
 ```
 
 ## Overview
