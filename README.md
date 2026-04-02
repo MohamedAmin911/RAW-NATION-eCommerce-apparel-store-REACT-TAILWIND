@@ -4,11 +4,10 @@ Premium fashion e-commerce storefront built with React, Vite, Tailwind CSS, and 
 
 ## Live Demo
 
-Vercel URL placeholder:
+URL:
 
-`https://your-vercel-project.vercel.app`
+`[https://your-vercel-project.vercel.app](https://raw-nation.vercel.app/)`
 
-Replace the placeholder above with your real deployed Vercel link.
 
 ## Screenshots
 ![Homepage](public/screenshots/homepage.png)
@@ -16,7 +15,7 @@ Replace the placeholder above with your real deployed Vercel link.
 ![Product Details](public/screenshots/product-details.png)
 ![Cart](public/screenshots/cart.png)
 ![About](public/screenshots/about.png)
-```
+
 
 ## Overview
 
@@ -43,39 +42,7 @@ RAW NATION is a modern apparel storefront focused on a premium editorial look, r
 - Context API for cart state
 - ESLint
 
-## Routes
 
-- `/`
-- `/shop`
-- `/product/:id`
-- `/cart`
-- `/collections`
-- `/about`
-- `/login`
-- `/signup`
-
-## Project Structure
-
-```text
-src/
-  components/
-  context/
-  data/
-  hooks/
-  pages/
-    About/
-    Auth/
-    Cart/
-    Collections/
-    Home/
-    Product/
-    Shop/
-  utils/
-  App.jsx
-  main.jsx
-public/
-  media/
-```
 
 ## Getting Started
 
